@@ -2,9 +2,21 @@
    box-sizing: border-box;
    --background-color: rgb(21, 20, 37);
    --font-color: rgb(216, 216, 216);
-   --my-name-color: rgb(206, 92, 252);
+   --my-name-color: rgb(152, 30, 201);
    font-size: 20px;
    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 800px) {
+   :root {
+      font-size: 18px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   :root {
+      font-size: 14px;
+   }
 }
 
 @font-face {
@@ -79,4 +91,34 @@ a.hero-main-link {
 .hero-main-link:active {
    height: calc(2rem - 4px);
    margin-top: 34px;
+}
+
+nav {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   background-color: black;
+   position: sticky;
+}
+
+ul.nav-links {
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   padding: 0;
+   width: 100%;
+}
+
+ul.nav-links li {
+   margin: 0 1rem;
+}
+
+ul.nav-links li a {
+   color: var(--font-color);
+   text-decoration: none;
+   font-weight: 600;
+}
+
+ul.nav-links li a:hover {
+   color: var(--my-name-color)
 }
