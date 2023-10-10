@@ -60,13 +60,11 @@ body {
 a.hero-main-link {
    display: flex;
    align-items: center;
-   background-color: transparent;
    padding: 12px 24px;
    font-size: 1rem;
    border: 2px solid var(--my-name-color);
    border-radius: 8px;
    margin-top: 30px;
-   width: fit-content;
    height: 2rem;
    box-shadow: 0 -4px 0 0 var(--my-name-color) inset;
    cursor: pointer;
