@@ -5,6 +5,7 @@
    --my-name-color: rgb(152, 30, 201);
    font-size: 20px;
    scroll-behavior: smooth;
+   -webkit-tap-highlight-color: transparent;
 }
 
 @media screen and (max-width: 800px) {
@@ -78,17 +79,14 @@ a.hero-main-link {
    margin-left: 1rem;
 }
 
-.hero-main-link:hover {
-   background-color: var(--my-name-color);
-}
-
-.hero-main-link:hover .fa-arrow-down {
-   color: var(--font-color);
-}
-
 .hero-main-link:active {
+   background-color: var(--my-name-color);
    height: calc(2rem - 4px);
    margin-top: 34px;
+}
+
+.hero-main-link:active .fa-arrow-down {
+   color: var(--font-color);
 }
 
 nav {
