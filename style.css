@@ -1,0 +1,82 @@
+:root {
+   box-sizing: border-box;
+   --background-color: rgb(21, 20, 37);
+   --font-color: rgb(216, 216, 216);
+   --my-name-color: rgb(206, 92, 252);
+   font-size: 20px;
+   scroll-behavior: smooth;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url('Roboto.woff2') format('woff2');
+}
+
+body {
+   margin: 0;
+   background-color: var(--background-color);
+   color: var(--font-color);
+   font-family: 'Roboto';
+}
+
+#hero {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero-details {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero-details p {
+   margin: 0;
+}
+
+.hero-text {
+   font-size: 2rem;
+}
+
+.my-name {
+   color: var(--my-name-color)
+}
+
+a.hero-main-link {
+   display: flex;
+   align-items: center;
+   background-color: transparent;
+   padding: 12px 24px;
+   font-size: 1rem;
+   border: 2px solid var(--my-name-color);
+   border-radius: 8px;
+   margin-top: 30px;
+   width: fit-content;
+   height: 2rem;
+   box-shadow: 0 -4px 0 0 var(--my-name-color) inset;
+   cursor: pointer;
+   color: var(--font-color);
+   text-decoration: none;
+}
+
+.fa-arrow-down {
+   font-size: 1.2rem;
+   color: var(--my-name-color);
+   margin-left: 1rem;
+}
+
+.hero-main-link:hover {
+   background-color: var(--my-name-color);
+}
+
+.hero-main-link:hover .fa-arrow-down {
+   color: var(--font-color);
+}
+
+.hero-main-link:active {
+   height: calc(2rem - 4px);
+   margin-top: 34px;
+}
