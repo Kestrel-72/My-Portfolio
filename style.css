@@ -3,21 +3,10 @@
    --background-color: rgb(21, 20, 37);
    --font-color: rgb(216, 216, 216);
    --my-name-color: rgb(152, 30, 201);
+   --nav-height: 3rem;
    font-size: 20px;
    scroll-behavior: smooth;
    -webkit-tap-highlight-color: transparent;
-}
-
-@media screen and (max-width: 800px) {
-   :root {
-      font-size: 18px;
-   }
-}
-
-@media screen and (max-width: 500px) {
-   :root {
-      font-size: 14px;
-   }
 }
 
 @font-face {
@@ -33,7 +22,7 @@ body {
 }
 
 #hero {
-   height: 100vh;
+   height: calc(100vh - var(--nav-height));
    display: flex;
    justify-content: center;
    align-items: center;
@@ -93,8 +82,10 @@ nav {
    display: flex;
    justify-content: center;
    width: 100%;
+   min-height: var(--nav-height);
    background-color: black;
    position: sticky;
+   bottom: 0;
 }
 
 ul.nav-links {
@@ -117,4 +108,117 @@ ul.nav-links li a {
 
 ul.nav-links li a:hover {
    color: var(--my-name-color)
+}
+
+.main {
+   display: flex;
+   flex-direction: column;
+}
+
+.main-section {
+   padding: 2rem 2rem;
+}
+
+.main-section::before {
+   content: ''; 
+   display: block; 
+   position: relative; 
+   width: 0; 
+   height: 30px; 
+   margin-top: -30px; 
+}
+
+.subheader {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+.subheader__title {
+   margin: 0 0 2rem 0;
+}
+
+.main-section-content {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.main-section-content_about {
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+}
+
+.biography {
+   display: grid;
+   grid-template-rows: max-content 1fr;
+}
+
+.my-photo {
+   border-radius: 50%;
+   border: 1px solid white;
+}
+
+.my-message {
+   height: fit-content;
+}
+
+.my-skills {
+   display: grid;
+   grid-template-columns: repeat(3, minmax(100px, 200px));
+   grid-column-gap: 0px;
+   grid-row-gap: 2rem;
+   justify-items: center;
+   align-items: start;
+}
+
+.my-skill {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: fit-content;
+}
+
+.my-skill__title {
+   margin: 0;
+}
+
+.my-skill__icon {
+   width: 4rem;
+   height: auto;
+   margin-bottom: 6px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+   :root {
+      font-size: 18px;
+   }
+
+   .main-section-content_about {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .my-photo {
+      width: 150px;
+      height: auto;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   :root {
+      font-size: 14px;
+   }
+   .my-skills {
+      grid-template-columns: repeat(2, minmax(100px, 200px));
+   }
+}
+
+@media screen and (max-width: 360px) {
+   :root {
+      font-size: 10px;
+   }
 }
