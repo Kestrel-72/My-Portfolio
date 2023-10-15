@@ -193,12 +193,13 @@ ul.nav-links li a:hover {
 .main-section-content_projects {
    display: flex;
    flex-direction: column;
+   gap: 3rem;
 }
 
 .my-project {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   height: 400px;
+   height: max-content;
 }
 
 .my-project-info__link {
@@ -281,7 +282,7 @@ ul.nav-links li a:hover {
 
    .main-section-content_about {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: max-content 1fr;
    }
 
    .my-photo {
@@ -301,7 +302,6 @@ ul.nav-links li a:hover {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
-      height: 400px;
    }
 }
 
