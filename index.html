@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./style.css">
+   <script src="script.js" defer></script>
    <script src="https://kit.fontawesome.com/0c932d7b29.js" crossorigin="anonymous"></script>
    <title>Роман Грехов</title>
 </head>
@@ -91,12 +92,84 @@
          <div class="subheader">
             <h2 class="subheader__title">Проекты</h2>
          </div>
+         <div class="main-section-content main-section-content_projects">
+            <div class="my-project">
+               <div class="my-project-info">
+                  <h3 class="my-project-info__title">Weather App</h3>
+                  <p class="my-project-info__description">
+                     Сайт, показывающий текущую погоду с помощью <a class="my-project-info__link" href="https://www.weatherapi.com/" target="_blank">Weather API</a>.
+                     Используется синтаксис async/await.
+                     Можно найти данные по любому городу, а также показывать данные в градусах Цельсия или Фареннгейта.
+                  </p>
+                  <div class="my-project-info__buttons">
+                     <a href="https://github.com/Kestrel-72/Weather-App" class="my-project-info__github-link" target="_blank">
+                        GitHub
+                     </a>
+                     <a href="https://kestrel-72.github.io/Weather-App/" class="my-project-info__live-link" target="_blank">
+                        Live
+                     </a>
+                  </div>
+               </div>
+               <img src="" alt="" class="my-project-img">
+            </div>
+            <div class="my-project">
+               <div class="my-project-info">
+                  <h3 class="my-project-info__title">Battleship</h3>
+                  <p class="my-project-info__description">
+                     Морской бой. Корабли расставляются рандомно с помощью алгоритма.
+                     Компьютер делает рандомные ходы, но пытается "добить" подбитые корабли.
+                  </p>
+                  <div class="my-project-info__buttons">
+                     <a href="https://github.com/Kestrel-72/Battleship-Game" class="my-project-info__github-link" target="_blank">
+                        GitHub
+                     </a>
+                     <a href="https://kestrel-72.github.io/Battleship-Game/" class="my-project-info__live-link" target="_blank">
+                        Live
+                     </a>
+                  </div>
+               </div>
+               <img src="" alt="" class="my-project-img">
+            </div>
+            <div class="my-project">
+               <div class="my-project-info">
+                  <h3 class="my-project-info__title">Sign-Up Form</h3>
+                  <p class="my-project-info__description">
+                     Форма регистрации. Плавающие заголовки полей.
+                     Использование цветов и всплывающих подсказок.
+                  </p>
+                  <div class="my-project-info__buttons">
+                     <a href="https://github.com/Kestrel-72/sign-up-form-v2" class="my-project-info__github-link" target="_blank">
+                        GitHub
+                     </a>
+                     <a href="https://kestrel-72.github.io/sign-up-form-v2/" class="my-project-info__live-link" target="_blank">
+                        Live
+                     </a>
+                  </div>
+               </div>
+               <img src="" alt="" class="my-project-img">
+            </div>
+         </div>
       </section>
       <section id="contacts" class="main-section">
          <div class="subheader">
             <h2 class="subheader__title">Контакты</h2>
          </div>
+         <div class="main-section-content main-section-content_contacts">
+            <div class="my-contact">
+               <p>Мой Телеграм: <span class="my-contact__copyable">@KestrelR</span></p>
+               <button class="my-contact__copy-button" onclick="copyContent('@KestrelR'), displayCopiedNotification()">
+                  <i class="fa-regular fa-copy"></i>
+               </button>
+            </div>
+            <div class="my-contact">
+               <p>Моя почта: <span class="copyable">grehovroman72@gmail.com</span></p>
+               <button class="my-contact__copy-button" onclick="copyContent('grehovroman72@gmail.com'), displayCopiedNotification()">
+                  <i class="fa-regular fa-copy"></i>
+               </button>
+            </div>
+         </div>
       </section>
    </main>
+   <div class="copied-notification">Скопировано!</div>
 </body>
 </html>
