@@ -40,7 +40,7 @@ body {
 }
 
 .hero-text {
-   font-size: 2rem;
+   font-size: 1.8rem;
 }
 
 .my-name {
@@ -237,6 +237,9 @@ ul.nav-links li a:hover {
 .my-contact {
    display: flex;
 }
+.my-contact__copyable {
+   display: block;
+}
 
 .my-contact__copy-button {
    margin-left: 1rem;
@@ -370,8 +373,9 @@ ul.nav-links li a:hover {
 
 @media screen and (max-width: 500px) {
    :root {
-      font-size: 14px;
+      font-size: 16px;
    }
+   
    .my-skills {
       grid-template-columns: repeat(2, minmax(100px, 200px));
    }
@@ -379,6 +383,9 @@ ul.nav-links li a:hover {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
+   }
+   .my-contact {
+      justify-content: space-between;
    }
 }
 
