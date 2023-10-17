@@ -19,3 +19,15 @@ function displayCopiedNotification() {
    }, 2000);
 }
 
+window.onload = () => {
+   setTimeout(function(){
+      let wrapper = document.querySelector('.loader-wrapper');
+      let loader = document.querySelector('.loader');
+      wrapper.classList.add('loaded');
+      loader.classList.add('loaded');
+      setTimeout(function() {
+         document.querySelector('.loader-wrapper').remove();
+      }, 2000)
+   }, 1500);
+}
+
