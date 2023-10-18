@@ -24,8 +24,5 @@ window.onload = () => {
    let loader = document.querySelector('.loader');
    wrapper.classList.add('loaded');
    loader.classList.add('loaded');
-   setTimeout(function() {
-      document.querySelector('.loader-wrapper').remove();
-   }, 2000)
 }
 
