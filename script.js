@@ -16,18 +16,16 @@ function displayCopiedNotification() {
    notification.classList.add('copied-notification_popped');
    setTimeout(() => {
       notification.classList.remove('copied-notification_popped');
-   }, 2000);
+   }, 1500);
 }
 
 window.onload = () => {
-   setTimeout(function(){
-      let wrapper = document.querySelector('.loader-wrapper');
-      let loader = document.querySelector('.loader');
-      wrapper.classList.add('loaded');
-      loader.classList.add('loaded');
-      setTimeout(function() {
-         document.querySelector('.loader-wrapper').remove();
-      }, 2000)
-   }, 1500);
+   let wrapper = document.querySelector('.loader-wrapper');
+   let loader = document.querySelector('.loader');
+   wrapper.classList.add('loaded');
+   loader.classList.add('loaded');
+   setTimeout(function() {
+      document.querySelector('.loader-wrapper').remove();
+   }, 2000)
 }
 

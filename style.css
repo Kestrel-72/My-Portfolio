@@ -4,6 +4,7 @@
    --font-color: rgb(216, 216, 216);
    --my-name-color: rgb(152, 30, 201);
    --nav-height: 3rem;
+   --border-radius: 8px;
    font-size: 20px;
    scroll-behavior: smooth;
    -webkit-tap-highlight-color: transparent;
@@ -234,8 +235,20 @@ ul.nav-links li a:hover {
    margin-top: 34px;
 }
 
+.main-section-content_contacts {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
 .my-contact {
    display: flex;
+   border: 1px solid var(--font-color);
+   border-radius: var(--border-radius);
+   width: max-content;
+   padding: 6px;
+   cursor: pointer;
+
 }
 .my-contact__copyable {
    display: block;
@@ -243,9 +256,12 @@ ul.nav-links li a:hover {
 
 .my-contact__copy-button {
    margin-left: 1rem;
-   cursor: pointer;
    background: none;
    border: none;
+}
+
+.my-contact:active .fa-copy {
+   color: var(--my-name-color)
 }
 
 .my-contact__copy-button:active .fa-copy {
@@ -266,7 +282,7 @@ ul.nav-links li a:hover {
    align-items: center;
    transition: bottom 0.3s;
    padding: 1rem;
-   border-radius: 8px;
+   border-radius: var(--border-radius)
 }
 
 .copied-notification_popped {
