@@ -203,6 +203,10 @@ ul.nav-links li a:hover {
    height: max-content;
 }
 
+.my-project-info__description {
+   margin-right: 1rem;
+}
+
 .my-project-info__link {
    color: white;
 }
@@ -210,6 +214,7 @@ ul.nav-links li a:hover {
 .my-project-info__buttons {
    display: flex;
    gap: 2rem;
+   padding-bottom: 2rem;
 }
 
 .my-project-info__github-link, .my-project-info__live-link {
@@ -233,6 +238,12 @@ ul.nav-links li a:hover {
    background-color: var(--my-name-color);
    height: calc(2rem - 4px);
    margin-top: 34px;
+}
+
+.my-project-img {
+   width: 100%;
+   height: auto;
+   border-radius: var(--border-radius);
 }
 
 .main-section-content_contacts {
@@ -385,6 +396,12 @@ ul.nav-links li a:hover {
       width: 150px;
       height: auto;
    }
+
+   .my-project {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content 1fr;
+   }
 }
 
 @media screen and (max-width: 500px) {
@@ -395,11 +412,7 @@ ul.nav-links li a:hover {
    .my-skills {
       grid-template-columns: repeat(2, minmax(100px, 200px));
    }
-   .my-project {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-   }
+   
    .my-contact {
       justify-content: space-between;
    }
