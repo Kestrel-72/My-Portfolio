@@ -263,10 +263,14 @@ ul.nav-links li a:hover {
    border: 1px solid var(--font-color);
    border-radius: var(--border-radius);
    width: max-content;
-   padding: 6px;
+   padding: 6px 1rem;
    cursor: pointer;
-
 }
+
+.my-contact:active {
+   border-color: var(--my-name-color);
+}
+
 .my-contact__copyable {
    display: block;
 }
