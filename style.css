@@ -1,6 +1,6 @@
 :root {
    box-sizing: border-box;
-   --background-color: rgb(21, 20, 37);
+   --background-color: #1a1a2d;
    --font-color: rgb(216, 216, 216);
    --my-name-color: rgb(152, 30, 201);
    --nav-height: 3rem;
@@ -207,9 +207,14 @@ ul.nav-links li a:hover {
    margin-right: 1rem;
 }
 
-.my-project-info__link {
+.my-project-info__link, .my-message__link {
    color: white;
 }
+
+.my-project-info__link:visited, .my-message__link:visited {
+   color: white;
+}
+
 
 .my-project-info__buttons {
    display: flex;
