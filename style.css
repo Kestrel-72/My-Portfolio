@@ -402,9 +402,17 @@ ul.nav-links li a:hover {
       grid-template-rows: max-content 1fr;
    }
 
+   .biography {
+      justify-items: center;
+   }
+
    .my-photo {
       width: 150px;
       height: auto;
+   }
+
+   .my-skills {
+      justify-content: center;
    }
 
    .my-project {
